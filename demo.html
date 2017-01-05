@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>KLD Scrollbar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+	body { height: 3000px; margin: 0px;    color: white; font-family: Arial; background: rgba(85, 205, 212, 1);  }
+	
+	.ScrollBar { 
+		position: absolute; top: 100px; left: 500px; width: 500px; 
+		height: 300px; width: 300px; margin: 50px auto; overflow: hidden;
+		-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+		border: 1px solid grey;	
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="kld-scrollbar.css">
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="kld-scrollbar.js"></script>
+	<script>
+	$(document).ready(function(){	
+	
+		Kld.scrollbar('.ScrollBar', {
+			cursorWheelDelta: 50
+		});
+				
+	});
+	</script>
+
+</head>
+<body>
+
+<div class="ScrollBar" id="scrollbar_1">
+	<div class="ScrollBar-content">
+		--------- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est LABORUM -------.
+	</div>
+	<div class="ScrollBar-bar" id="scrollbar_1"><div class="ScrollBar-cursor"></div></div>
+</div>
+
+</body>
+</html>

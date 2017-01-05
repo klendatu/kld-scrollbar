@@ -1,0 +1,9 @@
+
+.ScrollBar { position: relative; }
+
+	.ScrollBar-content {}
+
+	.ScrollBar-bar { position: relative; width: 2px; height: 345px; background-color: #ffffff; }
+
+	.ScrollBar-cursor { position: absolute; top: 0px; left: -4px; width: 10px; height: 70px; border-radius: 5px; background-color: #ffffff; }
+
